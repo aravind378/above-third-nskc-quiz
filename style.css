@@ -1,0 +1,262 @@
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: 100vh;
+        background: url('./images/know\ about.jpg');
+        position: relative;
+    }
+
+    .coin1 {
+        width: 10%;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        animation: spin 30s linear infinite;
+    }
+
+    .coin2 {
+        width: 5%;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        animation: spin 30s linear infinite;
+    }
+
+    .coin3 {
+        width: 10%;
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        animation: spin 30s linear infinite;
+    }
+
+    .coin4 {
+        width: 5%;
+        position: absolute;
+        bottom: 20%;
+        right: 10%;
+        animation: spin 30s linear infinite;
+    }
+    @keyframes spining {
+        from { transform: rotate(0deg); }
+        to   { transform: rotate(360deg); } 
+    }
+
+    
+
+
+
+    .earth {
+        width: 14%;
+        position: absolute;
+        top: 5%; 
+        animation: spin 30s linear infinite;
+    }
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to   { transform: rotate(360deg); } 
+    }
+
+    .book {
+        width: 20%;
+        position: absolute;
+        top: 30%;
+        animation: beatUp 5s infinite;
+    }
+    @keyframes beatUp {
+        0%   { transform: rotate(0deg) translate(0, 0) scale(1); }
+        15%  { transform: rotate(-3deg) translate(-2px, -2px) scale(0.98); }
+        30%  { transform: rotate(3deg)  translate(2px, -1px) scale(1.02); }
+        45%  { transform: rotate(-2deg) translate(-1px, 1px) scale(0.99); }
+        60%  { transform: rotate(2deg)  translate(2px, 0px) scale(1.01); }
+        75%  { transform: rotate(-1deg) translate(-1px, 2px) scale(0.98); }
+        100% { transform: rotate(0deg) translate(0, 0) scale(1); }
+    }
+
+    .star1 {
+        width: 6%;
+        position: absolute;
+        top: 10%;
+        left: 20%;
+        will-change:opacity, transform;
+    }
+    .star2 {
+        width: 10%;
+        position: absolute;
+        top: 30%;
+        right: 16%;
+        will-change:opacity, transform;
+    }
+    .star3 {
+        width: 10%;
+        position: absolute;
+        bottom: 9%;
+        left: 14%;
+        will-change:opacity, transform;
+    }
+    .star4 {
+        width: 6%;
+        position: absolute;
+        bottom: 40%;
+        left: 10%;
+        will-change:opacity, transform;
+    }
+    .star5 {
+        width: 6%;
+        position: absolute;
+        bottom: 40%;
+        right: 10%;
+        will-change:opacity, transform;
+    }
+    .star6 {
+        width: 6%;
+        position: absolute;
+        top: 10%;
+        right: 20%;
+        will-change:opacity, transform;
+    }
+    .twinkle{
+        animation: twinkle 2.4s ease-in-out infinite;
+        transform-origin: center;
+        opacity: 0.85;
+    }
+    @keyframes twinkle{
+        0%   { transform: scale(1);      opacity: 0.8;  filter: drop-shadow(0 0 0.2rem rgba(255,255,200,0.2)); }
+        25%  { transform: scale(1.08);   opacity: 1;    filter: drop-shadow(0 0 0.5rem rgba(255,255,200,0.45)); }
+        60%  { transform: scale(0.98);   opacity: 0.85; }
+        100% { transform: scale(1);      opacity: 0.8;  }
+    }
+
+    .head {
+        margin-top: 30%;
+        font-size: 40px;
+        color: white;
+        font-weight: 700;
+    }
+
+    .sub-head {
+        font-size: 34px;
+        color: white;
+        font-weight: 500;
+    }
+
+    .play-btn {
+        padding: 14px 20px 14px;
+        border: none;
+        outline: none;
+        background-color: #f39c12;
+        border-radius: 10px;
+        width: fit-content;
+        font-size: 30px;
+        font-weight: 800;
+        cursor: pointer;
+    }
+
+@media screen and (min-width:320px) and (max-width:768px) 
+{
+    .container {
+        padding: 20px;
+    }
+
+  
+
+    .earth {
+        width: 45%;
+        top: 10%;  
+    }
+    .book {
+        width: 65%;
+    }
+    .coin1 {
+        top: 10%;
+        right: 5%;
+        width: 20%;
+    }
+    .coin2 {
+        width: 15%;
+    }
+    .coin3 {
+        right: 10%;
+        bottom: 5%;
+        left: unset;
+    }
+    .coin4 {
+        right: 40%;
+        bottom: 5%;
+        left: unset;
+        width: 20%;
+    }
+    .star1 {
+        width: 20%;
+        top: 30%;
+        left: 10%;
+    }
+    .star6 {
+        top: 5%;
+        right: unset;
+        left: 15%;
+        width: 20%;
+    }
+
+    .head {
+        font-size: 30px;
+        position: absolute;
+        bottom: 25%;
+        left: 10px;
+        margin-top: 0;
+    }
+    .sub-head {
+        font-size: 18px;
+        position: absolute;
+        left: 10px;
+        bottom: 15%;
+
+    }
+    .play-btn {
+        font-size: 14px;
+        position: absolute;
+        left: 10px;
+        bottom: 5%;
+    }
+
+}
+
+
+@media screen and (min-width:375px) and (max-width:400px) 
+{
+    .earth {
+        width: 45%;
+        top: 6% !important;
+    }
+    .book {
+        width: 65%;
+        top: 28% !important;
+    }   
+}
+
+@media screen and (min-width:401px) and (max-width:500px) 
+{
+    .earth {
+        width: 35% !important;
+        top: 6% !important;
+    }
+    .book {
+        width: 55% !important;
+        top: 28% !important;
+    }   
+
+    .sub-head {
+        width: 80% !important;
+    }
+}

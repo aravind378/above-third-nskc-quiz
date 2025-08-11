@@ -1,0 +1,211 @@
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: url('../images/know\ about.jpg');
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .sub-container {
+        width: 70%;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+
+    .time {
+        display: flex;
+        align-items: center;
+    }
+    
+    .timer {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 14px;
+      margin-left: auto;
+      margin-bottom: 8px;
+    }
+    .question-count {
+      font-size: 16px;
+      color: #777;
+      margin-bottom: 4px;
+    }
+    .question-text {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+    .option {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      text-align: left;
+      background: #f2f2f2;
+      margin-bottom: 8px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .option:hover {
+      background: #007ab3;
+      color: white;
+      font-weight: 700;
+    }
+    .option:focus {
+      background: #007ab3;
+      color: white;
+      font-weight: 700;
+    }
+    .next-btn {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      background: #f39c12;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    
+
+
+
+/* COMPLETE PAGE */
+    .sub-container-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        gap: 40px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .result {
+        font-weight: 700;
+        font-size: 28px;
+    }
+
+    .won {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .won img {
+        width: 30%;
+        filter: drop-shadow(1px 1px 2px black);
+    }
+    .won p {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .score {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        width: 85%;
+    }
+    .score-head {
+        color: #007ab3;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .score-value {
+        width: 70%;
+        text-align: center;
+        border: 1px solid #f39c12;
+        background-color: white;
+        color: #007ab3;
+        padding: 2px 16px 5px;
+        border-radius: 20px;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .two-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+    .home {
+        width: 35%;
+        padding: 8px 14px 8px;
+        background-color: #f39c12;
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        cursor: pointer;
+    }
+    .play-again {
+        width: 35%;
+        padding: 8px 14px 8px;
+        background-color: #007ab3;
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        cursor: pointer;
+    }
+    /* COMPLETE PAGE */
+
+
+    @media screen and (min-width:320px) and (max-width:768px) 
+{
+
+    .sub-container-1 {
+        width: 90%;
+        background-repeat: no-repeat;
+    }
+      .sub-container {
+        width: 90%;
+    }
+
+    .two-btn {
+        justify-content: space-between;
+    }
+    .home {
+        width: 45%;
+        font-size: 14px;
+    }
+    .play-again {
+        width: 45%;
+        font-size: 14px;
+    }
+
+}
